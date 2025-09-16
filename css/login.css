@@ -1,0 +1,125 @@
+@charset "UTF-8";
+/****************************** Importación de Fuentes Web ******************************/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/****************************** Importación de Fuentes Web ******************************/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+/****************************** Variables ******************************/
+/****************************** Mixins ******************************/
+/****************************** Estilos Globales ******************************/
+html {
+  font-size: 16px;
+  max-height: 100rem;
+}
+
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; /* Prevents horizontal overflow */
+}
+
+h1 {
+  font-family: "PT Serif", serif;
+  color: #382742 !important;
+}
+
+h2 {
+  font-family: "PT Serif", serif;
+  color: #871400 !important;
+}
+
+p, label {
+  font-family: "Open Sans", sans-serif;
+}
+
+label {
+  color: #382742 !important;
+}
+
+input::-moz-placeholder {
+  color: rgba(56, 39, 66, 0.5) !important;
+}
+
+input::placeholder {
+  color: rgba(56, 39, 66, 0.5) !important;
+}
+
+/****************************** Estilos del Nav ******************************/
+.navbar-style {
+  transition: all 1s ease;
+  background-color: #EDF5FC !important;
+}
+
+.navbar-style:hover {
+  background-color: #EDF5FC !important;
+  box-shadow: 0 0 0.625rem #788D91;
+}
+
+.navbar {
+  padding: 0.75rem;
+  letter-spacing: 0.25rem;
+  border-bottom: 0.25rem solid #382742;
+  height: 6.25rem;
+}
+
+.navbar-logo {
+  width: 12.5rem;
+  height: 3.438rem;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.nav-item a {
+  color: #382742 !important;
+  font-size: larger;
+  font-weight: 500;
+}
+
+.navbar-menu-option {
+  font-family: "Open Sans", sans-serif;
+  color: #211727 !important;
+  font-size: 80px;
+  transition: all 1s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #D6D6D6 !important;
+}
+
+.option-menu:hover {
+  color: #EDF5FC !important;
+  border-radius: 0.313rem;
+  background-color: #211727;
+  transition: all 1s ease;
+}
+
+.option-menu:active {
+  background-color: #D6D6D6;
+}
+
+.dropdown-menu a {
+  color: #382742;
+}
+
+.dropdown-menu a:hover {
+  background-color: #211727;
+}
+
+/****************************** Menu Hamburguesa ******************************/
+.navbar-toggler {
+  background-color: #871400;
+  border: 0.063rem solid #211727;
+}
+
+.navbar-toggler:hover {
+  background-color: #211727;
+}
+
+.custom-toggler.navbar-toggler {
+  border-color: #871400;
+  border-width: 0.063rem;
+}
+
+/****************************** Login ******************************/
+.background {
+  background-color: #EDF5FC !important;
+}/*# sourceMappingURL=login.css.map */

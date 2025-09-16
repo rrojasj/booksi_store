@@ -1,0 +1,271 @@
+@charset "UTF-8";
+/****************************** Importación de Fuentes Web ******************************/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/****************************** Variables ******************************/
+
+$px-1: 0.063rem;
+$px-2: 0.125rem;
+$px-3: 0.188rem;
+$px-4: 0.25rem;
+$px-5: 0.313rem;
+$px-10: 0.625rem;
+$px-11: 0.688rem;
+$px-12: 0.75rem;
+$px-13: 0.813rem;
+$px-14: 0.875rem;
+$px-15: 0.938rem;
+$px-16: 1rem;
+$px-17: 1.063rem;
+$px-18: 1.125rem;
+$px-19: 1.188rem;
+$px-20: 1.25rem;
+$px-21: 1.313rem;
+$px-22: 1.375rem;
+$px-23: 1.438rem;
+$px-24: 1.5rem;
+$px-25: 1.563rem;
+$px-30: 1.875rem;
+$px-40: 2.5rem;
+$px-50: 3.125rem;
+$px-60: 3.75rem;
+$px-70: 4.375rem;
+$px-80: 5rem;
+$px-90: 5.625rem;
+$px-100: 6.25rem;
+$px-200: 12.5rem;
+$px-300: 18.75rem;
+$px-400: 25rem;
+$px-500: 31.25rem;
+$px-600: 37.5rem;
+$px-700: 43.75rem;
+$px-800: 50rem;
+$px-900: 56.25rem;
+$px-1000: 62.5rem;
+$px-1200: 75rem;
+$px-1300: 81.25rem;
+$px-1400: 87.5rem;
+$px-1500: 93.75rem;
+$px-1600: 100rem;
+
+$rem-1: 16px;
+$rem-2: 32px;
+$rem-3: 48px;
+$rem-4: 64px;
+$rem-5: 80px;
+
+$perc-25: 25%;
+$perc-50: 50%;
+$perc-75: 75%;
+$perc-100: 100%;
+
+// Títulos - Hs
+$font-family-pt-serif: "PT Serif", serif;
+// Párrafos
+$font-family-roboto-sans: "Roboto", sans-serif;
+// Botones - Navbar
+$font-family-open-sans: "Open Sans", sans-serif; 
+
+$font-size-base: 16px;
+$base-width: 100vw;
+$font-size-h1: 3rem;
+$font-size-h2: 2rem;
+$font-size-p: 1rem;
+$font-size-p-medium: 1.15rem;
+$font-size-p-large: 1.50rem;
+$font-size-btn: 1rem;
+
+// https://coolors.co/ff3333-28282a-eff7fb-42799e
+$color-primary-white: #fefefe;
+$color-primary-black: #121212;
+$color-primary-red: #ba0f0f;
+$color-primary-green: #088408;
+$color-primary-blue: #0707f1;
+$color-primary-grey: #818488;
+$color-secondary-black: #4c4848;
+$color-palette-1-1: #382742;
+$color-palette-1-2: #211727;
+$color-palette-1-1-transp: rgba(56, 39, 66, 0.5);
+$color-palette-2-1: #EDF5FC;
+$color-palette-2-2: #B9D8f3;
+$color-palette-2-2-transp: rgba(33, 23, 39, 0.5);
+$color-palette-3-1: #E88A8A;
+$color-palette-3-2: #E16666;
+$color-palette-4-1: #f1f1f1;
+$color-palette-4-2: #D6D6D6;
+$color-palette-5-1: #5C6D70;
+$color-palette-5-2: #788D91;
+$color-contact-whatsapp: #22BF5B;
+$color-contact-whatsapp-hover: #15793A;
+$color-contact-instagram: #D61F5C;
+$color-contact-instagram-hover: #8F143D;
+$color-contact-linkedin: #0AA9FF;
+$color-contact-linkedin-hover: #0077B5;
+$color-transition-font: $color-palette-2-1;
+
+$border-radius-btn: 3.125rem;
+$border-radius-circle: 100%;
+$border-radius-toggler: 0.063rem;
+
+$box-shadow: 0 0.375rem 0.938rem rgba(0, 0, 0, 0.2);
+
+$transition-duration: 0.5s;
+$transition-ease: ease;
+
+/****************************** Mixins ******************************/
+@mixin transition($properties, $duration, $timing-function: ease) {
+    transition: $properties $duration $timing-function;
+}
+
+@mixin center-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/****************************** Estilos Globales ******************************/
+html {
+    font-size: $font-size-base;
+    max-height: $px-1600;
+}
+
+body, html {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; /* Prevents horizontal overflow */
+}
+
+h1 {
+    font-family: $font-family-pt-serif;
+    color: $color-palette-1-1 !important;
+}
+
+h2 {
+    font-family: $font-family-pt-serif;
+    color: $color-palette-3-1 !important;
+}
+
+p, label {
+    font-family: $font-family-open-sans;
+}
+
+label {
+    color: $color-palette-1-1 !important;
+}
+
+input::placeholder {
+    color: $color-palette-1-1-transp !important;
+}
+
+span.required-field {
+    color: $color-palette-3-2;
+    font-size: $px-10;
+}
+
+/****************************** Estilos del Nav ******************************/
+.navbar-style {
+    @include transition(all, 1s);
+    background-color: $color-palette-2-1 !important;
+}
+
+.navbar-style:hover{
+    background-color: $color-palette-2-1 !important;
+    box-shadow: 0 0 $px-10 $color-palette-5-2;
+}
+  
+.navbar {
+    padding: $px-12;
+    letter-spacing: $px-4;
+    border-bottom: $px-4 solid $color-palette-1-1;
+    height: $px-100;
+}
+
+.navbar-logo {
+    width: $px-200;
+    height: 3.438rem;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.nav-item a{
+    color: $color-palette-1-1 !important;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.navbar-menu-option {
+    font-family: $font-family-open-sans;
+    color: $color-palette-1-2 !important;
+    font-size: $rem-5;
+    @include transition(all, 1s);
+}
+
+.dropdown-menu a:hover {
+    background-color: $color-palette-4-2 !important;
+}
+
+.option-menu:hover {
+    color: $color-palette-2-1 !important;
+    border-radius: $px-5;
+    background-color: $color-palette-1-2;
+    @include transition(all, 1s);
+}
+
+.option-menu:active {
+    background-color: $color-palette-4-2;
+}
+
+.dropdown-menu a {
+    color: $color-palette-1-1;
+}
+
+.dropdown-menu a:hover {
+    background-color: $color-palette-1-2;
+}
+
+/****************************** Menu Hamburguesa ******************************/
+.navbar-toggler {
+    background-color: $color-palette-3-1;
+    border: $px-1 solid $color-palette-1-2;
+    
+}
+
+.navbar-toggler:hover {
+    background-color: $color-palette-1-2;
+}
+
+.custom-toggler:active {
+    $navbar-toggler-focus-width: 0 !default;
+}
+
+.custom-toggler.navbar-toggler {
+border-color: $color-palette-3-1;
+border-width: $px-1;
+}
+
+/****************************** Buttons ******************************/
+.btn-primary-booksy {
+    background-color: $color-palette-1-1 !important;
+    border-color: $color-palette-1-1 !important;
+    color: $color-palette-2-1 !important;
+
+}
+
+.btn-primary-booksy:hover {
+    background-color: $color-palette-1-1-transp !important;
+    border-color: $color-palette-1-1-transp !important;
+    color: $color-palette-2-2 !important;
+}
+
+.btn-secondary-booksy {
+    background-color: $color-palette-3-1 !important;
+    border-color: $color-palette-3-1 !important;
+    color: $color-palette-2-1 !important;
+
+}
+
+.btn-secondary-booksy:hover {
+    background-color: $color-palette-3-2 !important;
+    border-color: $color-palette-3-2 !important;
+    color: $color-palette-2-2 !important;
+}
