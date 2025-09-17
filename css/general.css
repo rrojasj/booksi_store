@@ -59,7 +59,7 @@ span.required-field {
 
 .navbar {
   padding: 0.75rem;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.125rem !important;
   border-bottom: 0.25rem solid #382742;
   height: 6.25rem;
 }
@@ -145,4 +145,94 @@ span.required-field {
   background-color: #E16666 !important;
   border-color: #E16666 !important;
   color: #B9D8f3 !important;
+}
+
+.btn-outline-booksy {
+  border-color: #382742 !important;
+  color: #382742 !important;
+}
+
+.btn-outline-booksy:hover {
+  background-color: rgba(56, 39, 66, 0.5) !important;
+  border-color: #382742 !important;
+  color: #EDF5FC !important;
+}
+
+/****************************** Estilos del Nav ******************************/
+.navbar-style {
+  transition: all 1s ease;
+  background-color: #EDF5FC !important;
+}
+
+.navbar-style:hover {
+  background-color: #EDF5FC !important;
+  box-shadow: 0 0 0.625rem #788D91;
+}
+
+.navbar {
+  padding: 0.75rem;
+  letter-spacing: 0.25rem;
+  border-bottom: 0.25rem solid #382742;
+  height: 6.25rem;
+}
+
+.navbar-logo {
+  width: 12.5rem;
+  height: 3.438rem;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.nav-item a {
+  color: #382742 !important;
+  font-size: larger;
+  font-weight: 500;
+}
+
+.navbar-menu-option {
+  font-family: "Open Sans", sans-serif;
+  color: #211727 !important;
+  font-size: 80px;
+  transition: all 1s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #D6D6D6 !important;
+}
+
+.nav-link {
+  font-size: 0.938rem !important;
+  transition: font-size 0.3s ease !important;
+}
+
+.nav-link:hover {
+  font-size: 1.063rem !important;
+}
+
+.navbar-logo img {
+  transition: all 1s ease;
+}
+
+/****************************** Línea separadora ******************************/
+.separator-line {
+  padding-top: 0.313rem;
+  padding-bottom: 0.313rem;
+  background-color: #382742;
+}
+
+/****************************** Lista de libros - Elementos ******************************/
+.text-bg-booksy:hover {
+  color: #EDF5FC;
+  background-color: #382742;
+}
+
+.text-bg-booksy {
+  color: #EDF5FC;
+  background-color: rgba(56, 39, 66, 0.5);
+}
+
+.add-book-cart:hover {
+  color: #211727 !important;
+  transition: font-size s ease !important;
+  cursor: pointer;
 }/*# sourceMappingURL=general.css.map */

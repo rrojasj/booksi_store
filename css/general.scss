@@ -175,7 +175,7 @@ span.required-field {
   
 .navbar {
     padding: $px-12;
-    letter-spacing: $px-4;
+    letter-spacing: $px-2 !important;
     border-bottom: $px-4 solid $color-palette-1-1;
     height: $px-100;
 }
@@ -268,4 +268,94 @@ border-width: $px-1;
     background-color: $color-palette-3-2 !important;
     border-color: $color-palette-3-2 !important;
     color: $color-palette-2-2 !important;
+}
+
+.btn-outline-booksy {
+    border-color: $color-palette-1-1 !important;
+    color: $color-palette-1-1 !important;
+}
+
+.btn-outline-booksy:hover {
+    background-color: $color-palette-1-1-transp !important;
+    border-color: $color-palette-1-1 !important;
+    color: $color-palette-2-1 !important;
+}
+
+/****************************** Estilos del Nav ******************************/
+.navbar-style {
+    @include transition(all, 1s);
+    background-color: $color-palette-2-1 !important;
+}
+
+.navbar-style:hover{
+    background-color: $color-palette-2-1 !important;
+    box-shadow: 0 0 $px-10 $color-palette-5-2;
+}
+  
+.navbar {
+    padding: $px-12;
+    letter-spacing: $px-4;
+    border-bottom: $px-4 solid $color-palette-1-1;
+    height: $px-100;
+}
+
+.navbar-logo {
+    width: $px-200;
+    height: 3.438rem;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
+}
+
+.nav-item a{
+    color: $color-palette-1-1 !important;
+    font-size: larger;
+    font-weight: 500;
+}
+
+.navbar-menu-option {
+    font-family: $font-family-open-sans;
+    color: $color-palette-1-2 !important;
+    font-size: $rem-5;
+    @include transition(all, 1s);
+}
+
+.dropdown-menu a:hover {
+    background-color: $color-palette-4-2 !important;
+}
+
+.nav-link {
+    font-size: $px-15 !important;
+    transition: font-size 0.3s ease !important;
+}
+
+.nav-link:hover {
+    font-size: $px-17 !important;
+}
+
+.navbar-logo img {
+    transition: all 1s ease;
+}
+
+/****************************** Línea separadora ******************************/
+.separator-line {
+    padding-top: $px-5;
+    padding-bottom: $px-5;
+    background-color: $color-palette-1-1;
+}
+
+/****************************** Lista de libros - Elementos ******************************/
+.text-bg-booksy:hover {
+    color: $color-palette-2-1;
+    background-color: $color-palette-1-1;
+}
+
+.text-bg-booksy {
+    color: $color-palette-2-1;
+    background-color: $color-palette-1-1-transp;
+}
+
+.add-book-cart:hover {
+    color: $color-palette-1-2 !important;
+    transition: font-size s ease !important;
+    cursor: pointer;
 }

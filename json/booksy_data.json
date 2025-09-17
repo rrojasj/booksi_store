@@ -1,0 +1,54 @@
+{
+    "books": [
+        {
+            "isbn": "978-8408137382",
+            "name": "Duna",
+            "qty": 10
+        },
+        {
+            "isbn": "978-8437604572",
+            "name": "Rayuela",
+            "qty": 4
+        },
+        {
+            "isbn": "978-8497592208",
+            "name": "Siddartha",
+            "qty": 2
+        },
+        {
+            "isbn": "978-8408163565",
+            "name": "El Alquimista",
+            "qty": 5
+        },
+        {
+            "isbn": "978-8420412146",
+            "name": "Pedro Páramo",
+            "qty": 3
+        },
+        {
+            "isbn": "978-8408093107",
+            "name": "El Poder del Ahora",
+            "qty": 8
+        },
+        {
+            "isbn": "978-8466332651",
+            "name": "Los Cuatro Acuerdos",
+            "qty": 9
+        },
+        {
+            "isbn": "978-8420471839",
+            "name": "Ficciones",
+            "qty": 6
+        },
+        {
+            "isbn": "978-8499899788",
+            "name": "El nombre del Viento",
+            "qty": 2
+        },
+        {
+            "isbn": "978-8408267157",
+            "name": "El viejo y el mar",
+            "qty": 7
+        }
+    ]
+}

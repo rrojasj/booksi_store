@@ -24,7 +24,7 @@ h1 {
 
 h2 {
   font-family: "PT Serif", serif;
-  color: #871400 !important;
+  color: #E88A8A !important;
 }
 
 p, label {
@@ -43,6 +43,11 @@ input::placeholder {
   color: rgba(56, 39, 66, 0.5) !important;
 }
 
+span.required-field {
+  color: #E16666;
+  font-size: 0.625rem;
+}
+
 /****************************** Estilos del Nav ******************************/
 .navbar-style {
   transition: all 1s ease;
@@ -56,7 +61,7 @@ input::placeholder {
 
 .navbar {
   padding: 0.75rem;
-  letter-spacing: 0.25rem;
+  letter-spacing: 0.125rem;
   border-bottom: 0.25rem solid #382742;
   height: 6.25rem;
 }
@@ -106,7 +111,7 @@ input::placeholder {
 
 /****************************** Menu Hamburguesa ******************************/
 .navbar-toggler {
-  background-color: #871400;
+  background-color: #E88A8A;
   border: 0.063rem solid #211727;
 }
 
@@ -115,8 +120,95 @@ input::placeholder {
 }
 
 .custom-toggler.navbar-toggler {
-  border-color: #871400;
+  border-color: #E88A8A;
   border-width: 0.063rem;
+}
+
+/****************************** Buttons ******************************/
+.btn-primary-booksy {
+  background-color: #382742 !important;
+  border-color: #382742 !important;
+  color: #EDF5FC !important;
+}
+
+.btn-primary-booksy:hover {
+  background-color: rgba(56, 39, 66, 0.5) !important;
+  border-color: rgba(56, 39, 66, 0.5) !important;
+  color: #B9D8f3 !important;
+}
+
+.btn-secondary-booksy {
+  background-color: #E88A8A !important;
+  border-color: #E88A8A !important;
+  color: #EDF5FC !important;
+}
+
+.btn-secondary-booksy:hover {
+  background-color: #E16666 !important;
+  border-color: #E16666 !important;
+  color: #B9D8f3 !important;
+}
+
+/****************************** Estilos del Nav ******************************/
+.navbar-style {
+  transition: all 1s ease;
+  background-color: #EDF5FC !important;
+}
+
+.navbar-style:hover {
+  background-color: #EDF5FC !important;
+  box-shadow: 0 0 0.625rem #788D91;
+}
+
+.navbar {
+  padding: 0.75rem;
+  letter-spacing: 0.25rem;
+  border-bottom: 0.25rem solid #382742;
+  height: 6.25rem;
+}
+
+.navbar-logo {
+  width: 12.5rem;
+  height: 3.438rem;
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+.nav-item a {
+  color: #382742 !important;
+  font-size: larger;
+  font-weight: 500;
+}
+
+.navbar-menu-option {
+  font-family: "Open Sans", sans-serif;
+  color: #211727 !important;
+  font-size: 80px;
+  transition: all 1s ease;
+}
+
+.dropdown-menu a:hover {
+  background-color: #D6D6D6 !important;
+}
+
+.nav-link {
+  font-size: 0.938rem !important;
+  transition: font-size 0.3s ease !important;
+}
+
+.nav-link:hover {
+  font-size: 1.063rem !important;
+}
+
+.navbar-logo img {
+  transition: all 1s ease;
+}
+
+/****************************** Línea separadora ******************************/
+.separator-line {
+  padding-top: 0.313rem;
+  padding-bottom: 0.313rem;
+  background-color: #382742;
 }
 
 /****************************** Login ******************************/
